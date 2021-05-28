@@ -1,10 +1,11 @@
 * {
     text-align: center;
+    font-family: sans-serif;
+    color:#373737;
+    font-size: 11pt;
     /* border-style: solid;
     border-color: red;
     border-width: 1px; */
-    color:#373737;
-    font-size: 11pt;
 }
 
 body {
@@ -20,20 +21,26 @@ body {
     background-color: #DDDDDD;
 }
 
+.header {
+    padding: 0;
+    margin: 0;
+}
 .header img {
+    display: inline-block;
     position: relative;
     top: 10px;
-    right:15px;
-    width: 100px;
-    -webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+    margin: 10px;
+    height:100px;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
 }
-.header p {
+.header div {
     display: inline-block;
-    font-family: sans-serif;
+    margin: 10px;
+    position: relative;
+    bottom: 5px;
+    /* below for inner font shadow */
     font-weight: bolder;
     font-size: 32pt;
-    margin-top: 0;
-    /* below for inner font shadow */
     background-color: darkgreen;
     color: transparent;
     text-shadow: 0px 1px 2px rgba(255,255,255,0.4);
@@ -42,35 +49,39 @@ body {
     background-clip: text;
 }
 
+hr {
+    margin: 10px 0;
+}
+
 h1 {
-    font-family: sans-serif;
     font-weight: bolder;
     font-size: 18pt;
     margin: 10px;
-    color: #333333;
     background-color: #c3c3c3;
-    border-style: solid;
-    border-width: 1px;
-    border-top-color: lightgray;
-    border-left-color: lightgray;
-    border-bottom-color: #999999;
-    border-right-color: #999999;
+    border: solid 1px #AAAAAA;
 }
 
 p {
-    margin: 0 20px;
-    font-family:  sans-serif;
+    margin: 0 5px;
 }
 
-a:active, a:hover {
+table a {
+    text-decoration: none;
+    background-color: #c3c3c3;
+    /* border: solid 1px #999999; */
+    box-shadow: inset -1px -1px 1px gray;
+    border-radius: 3px;
+    padding: 2px
+}
+table a:active, table a:hover {
     background-color: #AAAAAA;
 }
+table a:active {
+    box-shadow: inset 1px 1px 1px gray;
+}
 
-table {
-    min-width: 300px;
-    font-family: sans-serif;
-    font-size:large;
-    margin: auto;
+table, .textbox {
+    padding: 2px;
     border: solid 1px;
     border-top-color: #999999;
     border-left-color: #999999;
@@ -78,24 +89,41 @@ table {
     border-right-color: lightgray;
 }
 
+.textbox {
+    /* display: inline-block; */
+    margin: 0 10px;
+    padding: 5px;
+}
+
+table {
+    min-width: 300px;
+    font-size:large;
+    margin: auto;
+    
+}
+
 button {
     padding: 10px 50px;
     border: 0;
     border-radius: 10px;
     background-color: #c3c3c3;
-    box-shadow: inset -2px -2px 2px #444444;
+    box-shadow: inset -1px -1px 1px gray;
 }
 button:hover, button:active {
     background-color: #AAAAAA;
 }
 button:active {
-    box-shadow: inset 2px 2px 2px #444444;
+    box-shadow: inset 1px 1px 1px gray;
 }
 
 .icp_registration * {
-    font-family: Arial, Helvetica, sans-serif;
     text-align:center;
-    color: #808080;
+    color: gray;
+}
+.icp_registration a {
+    border: none;
+    display: inline-block;
+    margin: 0 5px;
 }
 .icp_registration a:hover, .icp_registration a:active {
     background-color: transparent;
