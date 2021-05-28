@@ -21,7 +21,7 @@ body {
     border-style: ridge;
     background-color: #DDDDDD;
 }
-.column {
+.section {
     vertical-align: top;
     display: inline-block;
     width: 375px;
@@ -30,12 +30,12 @@ body {
 .section_header {
     font-weight: bolder;
     font-size: 18pt;
-    margin: auto;
+    margin: 10px 10px 0 10px;
     background-color: #c3c3c3;
     border: solid 1px #AAAAAA;
 }
-.section {
-    margin:10px;
+.section_body {
+    margin: 10px;
 }
 
 /* header stuff */
@@ -67,7 +67,7 @@ body {
 
 /* for text boxes and tables */
 table {
-    min-width: 300px;
+    min-width: 350px;
     font-size:large;
 }
 table a {
@@ -86,7 +86,7 @@ table a:active {
 }
 table, .textbox {
     margin: auto;
-    padding: 2px;
+    padding: 5px;
     border: solid 1px;
     border-top-color: #999999;
     border-left-color: #999999;
@@ -104,7 +104,7 @@ hr {
     margin: 10px 0;
 }
 p {
-    margin: 0 5px;
+    margin: 5px;
 }
 
 /* buttons */
