@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ASTER CI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' href="style.css">
+	<script>
+		var count = 0;
+		function add_count() {
+			console.log(count);
+			count++;
+			update_count();
+		}
+		function clear_count() {
+			console.log(count);
+			count = 0;
+			document.getElementById("demo").innerHTML = "";
+		}
+		function update_count() {
+			var string = `<br>I'm a tally counter! Count: ${count}`
+			document.getElementById("demo").innerHTML = string;
+		}
+	</script>
+</head>
+
+<body>
+
+	<div class="main_content">
+		<div class="header">
+			<img src="logo.png" type="image/png">
+			<p>ASTER CI-T<br>菀测试站</p>
+		</div>
+
+		<hr>
+		<h1>关于本站</h1>
+		<p>本站用于个人技术测试，不对外提供服务。</p>
+		<p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+			nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+			anim id est laborum.
+		</p>
+
+		<hr>
+		<h1>节点列表</h1>
+		<table>
+			<tr>
+				<th>编号</th>
+				<th>名称</th>
+				<th>接入点</th>
+			</tr>
+			<tr>
+				<td>测试节点1</td>
+				<td>MAS</td>
+				<td><a href="https://mas.aster-project.xyz" target="_blank">登录</a></td>
+			</tr>
+			<tr>
+				<td>测试节点2</td>
+				<td>MXH</td>
+				<td><a href="https://mxh.aster-project.xyz" target="_blank">登录</a></td>
+			</tr>
+		</table>
+
+
+		<hr>
+		<h1>文件列表</h1>
+		<table>
+			<tr>
+				<th>文件类型</th>
+				<th>名称</th>
+				<th>下载</th>
+			</tr>
+			<tr>
+				<td>根CA证书</td>
+				<td>MAS Root CA</td>
+				<td><a href="/ca/mas_root.crt" target="_blank">链接</a></td>
+			</tr>
+			<tr>
+				<td>中级CA证书</td>
+				<td>MAS Int CA - A1</td>
+				<td><a href="/ca/mas_a1.crt"" target=" _blank">链接</a></td>
+			</tr>
+			<tr>
+				<td>GPG公钥</td>
+				<td>管理员</td>
+				<td><a href="/ca/admin.gpg"" target=" _blank">链接</a></td>
+			</tr>
+		</table>
+
+		<hr>
+		<h1>联系信息</h1>
+		<p>管理员email: <a href="mailto:greencodes@163.com">greencodes@163.com</a></p>
+
+		<hr>
+		<button type="button" onclick="add_count()">Tap!</button>
+		<button type="button" onclick="clear_count()">Clear~</button>
+
+		<div id="demo"></div>
+	</div>
+
+	<br>
+	<div class="icp_registration">
+		<span>Copyright © 2021 ASTER Project. All rights reserved.</span><br>
+		<a
+			href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=00000000000000">京公网安备00000000000000号(审核中)</a>
+		&nbsp;
+		<a href="https://beian.miit.gov.cn">京ICP备2021016337号</a>
+	</div>
+	<br>
+
+</body>
+
+</html>
