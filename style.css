@@ -1,3 +1,4 @@
+/* defaults */
 * {
     text-align: center;
     font-family: sans-serif;
@@ -7,37 +8,52 @@
     border-color: red;
     border-width: 1px; */
 }
-
 body {
     background-color: whitesmoke;
 }
 
+/* main area */
 .main_content {
-    max-width: 450px;
+    max-width: 800px;
     margin: auto;
     margin-top: 20px;
     padding: 10px;
     border-style: ridge;
     background-color: #DDDDDD;
 }
+.column {
+    vertical-align: top;
+    display: inline-block;
+    width: 375px;
+    margin: 0 10px;
+}
+.section_header {
+    font-weight: bolder;
+    font-size: 18pt;
+    margin: auto;
+    background-color: #c3c3c3;
+    border: solid 1px #AAAAAA;
+}
+.section {
+    margin:10px;
+}
 
+/* header stuff */
 .header {
     padding: 0;
     margin: 0;
 }
 .header img {
     display: inline-block;
-    position: relative;
-    top: 10px;
+    vertical-align: top;
     margin: 10px;
-    height:100px;
+    height:110px;
     filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
 }
 .header div {
     display: inline-block;
+    vertical-align: top;
     margin: 10px;
-    position: relative;
-    bottom: 5px;
     /* below for inner font shadow */
     font-weight: bolder;
     font-size: 32pt;
@@ -49,22 +65,11 @@ body {
     background-clip: text;
 }
 
-hr {
-    margin: 10px 0;
+/* for text boxes and tables */
+table {
+    min-width: 300px;
+    font-size:large;
 }
-
-h1 {
-    font-weight: bolder;
-    font-size: 18pt;
-    margin: 10px;
-    background-color: #c3c3c3;
-    border: solid 1px #AAAAAA;
-}
-
-p {
-    margin: 0 5px;
-}
-
 table a {
     text-decoration: none;
     background-color: #c3c3c3;
@@ -79,29 +84,30 @@ table a:active, table a:hover {
 table a:active {
     box-shadow: inset 1px 1px 1px gray;
 }
-
 table, .textbox {
+    margin: auto;
     padding: 2px;
     border: solid 1px;
     border-top-color: #999999;
     border-left-color: #999999;
-    border-bottom-color: lightgray;
-    border-right-color: lightgray;
+    border-bottom-color: whitesmoke;
+    border-right-color: whitesmoke;
 }
-
 .textbox {
     /* display: inline-block; */
-    margin: 0 10px;
+    /* max-width: 400px; */
     padding: 5px;
 }
 
-table {
-    min-width: 300px;
-    font-size:large;
-    margin: auto;
-    
+/* general stuff */
+hr {
+    margin: 10px 0;
+}
+p {
+    margin: 0 5px;
 }
 
+/* buttons */
 button {
     padding: 10px 50px;
     border: 0;
@@ -116,6 +122,7 @@ button:active {
     box-shadow: inset 1px 1px 1px gray;
 }
 
+/* icp registration section */
 .icp_registration * {
     text-align:center;
     color: gray;
