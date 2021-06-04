@@ -16,7 +16,7 @@ body {
 .main_content {
     max-width: 800px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
     border-style: ridge;
     background-color: #DDDDDD;
@@ -24,7 +24,7 @@ body {
 .section {
     vertical-align: top;
     display: inline-block;
-    width: 375px;
+    width: 350px;
     margin: 0 10px;
 }
 .section_header {
@@ -67,7 +67,7 @@ body {
 
 /* for text boxes and tables */
 table {
-    min-width: 350px;
+    min-width: 300px;
     font-size:large;
 }
 table a {
@@ -94,22 +94,24 @@ table, .textbox {
     border-right-color: whitesmoke;
 }
 .textbox {
-    /* display: inline-block; */
-    /* max-width: 400px; */
     padding: 5px;
+}
+.textbox p {
+    text-align: left;
+    text-indent: 2ch;
+    margin: 5px;
 }
 
 /* general stuff */
 hr {
     margin: 10px 0;
 }
-p {
-    margin: 5px;
-}
 
 /* buttons */
 button {
-    padding: 10px 50px;
+    margin: 0 10px;
+    padding: 10px 10px;
+    width: 100px;
     border: 0;
     border-radius: 10px;
     background-color: #c3c3c3;
@@ -124,12 +126,14 @@ button:active {
 
 /* icp registration section */
 .icp_registration * {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
     text-align:center;
     color: gray;
 }
 .icp_registration a {
     border: none;
-    display: inline-block;
     margin: 0 5px;
 }
 .icp_registration a:hover, .icp_registration a:active {

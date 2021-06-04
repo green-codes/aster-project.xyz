@@ -5,6 +5,7 @@
 	<title>ASTER CI</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="logo.png">
 	<link rel='stylesheet' href="style.css">
 	<script>
 		var count = 0;
@@ -19,7 +20,7 @@
 			document.getElementById("demo").innerHTML = "";
 		}
 		function update_count() {
-			var string = `<br>I'm a tally counter! Count: ${count}`
+			var string = `I'm a tally counter! Count: ${count}`
 			document.getElementById("demo").innerHTML = string;
 		}
 	</script>
@@ -31,7 +32,7 @@
 
 		<div class="header">
 			<img src="logo.png" type="image/png">
-			<div>ASTER CI-T<br>菀测试站</div>
+			<div>ASTER CI-T<br>菀·测试站</div>
 		</div>
 
 		<hr>
@@ -40,15 +41,11 @@
 			<div class="section_header">关于本站</div>
 			<div class="section_body">
 				<div class="textbox">
-					<p style="text-align: left; text-indent:2ch;">本站用于个人技术测试，不对外提供服务。</p>
-					<p style="text-align: left; text-indent:2ch;">Lorem ipsum dolor sit amet, consectetur adipiscing
-						elit, sed do eiusmod
-						tempor
-						incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-						ex
-						ea
-						commodo consequat. 
+					<p>
+						本站用于个人技术测试，不对外提供服务。
+					</p>
+					<p>
+						注意：本站使用SSL证书进行HTTPS加密传输，证书链依赖本站签发的根CA证书。本站CA及相关证书链不对外开放使用，下载或信任本站CA证书者后果自负。
 					</p>
 				</div>
 			</div>
@@ -88,7 +85,7 @@
 			<div class="section_body">
 				<table>
 					<tr>
-						<th>类型</th>
+						<th>节点类型</th>
 						<th>编号</th>
 						<th>名称</th>
 						<th>接入点</th>
@@ -113,7 +110,10 @@
 			<div class="section_header">联系信息</div>
 			<div class="section_body">
 				<div class="textbox">
-					<p>管理员email: <a href="mailto:greencodes@163.com">greencodes@163.com</a></p>
+					<!-- <p>管理员email: <a href="mailto:greencodes@163.com">greencodes@163.com</a></p> -->
+					<p style="text-align: center; text-indent: 0;">
+						No information available.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -122,17 +122,19 @@
 		<button type="button" onclick="add_count()">Tap!</button>
 		<button type="button" onclick="clear_count()">Clear~</button>
 
-		<div id="demo"></div>
+		<p id="demo"></p>
 
 	</div>
 
 	<br>
 	<div class="icp_registration">
-		<span>Copyright © 2021 ASTER Project. All rights reserved.</span>
-		<br>
-		<a
-			href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=00000000000000">京公网安备00000000000000号(审核中)</a>
-		<a href="https://beian.miit.gov.cn">京ICP备2021016337号</a>
+		<p>Copyright © 2021 ASTER Project. All rights reserved.</p><br>
+		<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802035136">
+			<img src="mps.png" type="image/png"> 京公网安备 11010802035136号
+		</a>
+		<a href="https://beian.miit.gov.cn">
+			京ICP备2021016337号
+		</a>
 	</div>
 	<br>
 
